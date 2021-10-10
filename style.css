@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/pattern-background-desktop.svg);
+
+  position: relative;
+}
+.background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(239, 245, 245, 0.829);
+}
+.box {
+  z-index: 10;
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr);
+  /* grid-template-rows: repeat(4, minmax(50px, 1fr)); */
+  row-gap: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  max-width: 90%;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-bottom: 40px;
+  margin-top: 20px;
+}
+.box .head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box .head .back img {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-bottom: 30px;
+}
+.box .head .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.box .head .content .text {
+  line-height: 1.6;
+  max-width: 350px;
+}
+.box .head .content .text p {
+  color: hsla(224, 23%, 55%, 0.76);
+  font-weight: 700;
+}
+.box .head .content h2 {
+  color: hsl(223, 53%, 21%);
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.container {
+  max-width: 400px;
+  margin: 0px auto;
+}
+.box .footer .price {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(238, 238, 238, 0.582);
+  border-radius: 20px;
+  /* padding: 10px 80px; */
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first img {
+  margin-right: 10px;
+}
+.box .footer .price .first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box .footer .price .annual h4 {
+  line-height: 25px;
+  font-weight: 900;
+}
+.box .footer .price .annual p {
+  color: hsla(224, 23%, 55%, 0.76);
+}
+.box .footer .price a {
+  color: hsl(245, 75%, 52%);
+  font-weight: 900;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+}
+.buttons div:first-child {
+  color: white;
+  font-weight: 500;
+  background-color: hsl(245, 75%, 52%);
+  /* padding: 15px 70px; */
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 20px 20px;
+  text-align: center;
+}
+.cancel {
+  color: hsla(224, 23%, 55%, 0.76);
+  font-weight: 800;
+  margin-top: 20px;
+}
+@media (max-width: 375px) {
+  .buttons div:first-child {
+    font-size: 16px;
+  }
+}
